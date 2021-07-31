@@ -1,6 +1,10 @@
 function paths(n) {
-	
-} 
+	routes = 1
+    for ( let i = 1; i <= n; i++) {
+        routes *= i  
+    }
+    return routes
+}
 
 console.log(paths(1), 1)
 console.log(paths(2), 2)
